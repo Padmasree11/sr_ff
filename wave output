@@ -1,9 +1,10 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /ENCODER/din
-add wave -noupdate /ENCODER/a
-add wave -noupdate /ENCODER/b
-add wave -noupdate /ENCODER/c
+add wave -noupdate /SR_FF/clk
+add wave -noupdate /SR_FF/rst
+add wave -noupdate /SR_FF/S
+add wave -noupdate /SR_FF/R
+add wave -noupdate /SR_FF/Q
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0
@@ -21,4 +22,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {1 ns}
+WaveRestoreZoom {0 ps} {2296 ps}
